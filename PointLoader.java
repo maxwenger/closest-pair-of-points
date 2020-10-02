@@ -17,7 +17,6 @@ public class PointLoader {
         scanny.close();
 
         int[][] pointArray = arrayListToArray(points);
-        pointArray = sortArrayByY(pointArray);
         return pointArray;
     }
 
@@ -25,11 +24,6 @@ public class PointLoader {
         int[][] array = new int[list.size()][];
         array = list.toArray(array);
         return array;
-    }
-
-    private static int[][] sortArrayByY(int[][] points) {
-        Arrays.sort(points, Comparator.comparingInt(o -> o[0]));
-        return points;
     }
 
     private static int[] getPointsFromString(String pointString) {

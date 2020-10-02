@@ -1,3 +1,4 @@
+import java.io.FileNotFoundException;
 import java.util.*;
 
 class ClosestPairOfPoints {
@@ -7,10 +8,11 @@ class ClosestPairOfPoints {
 
         try {
             int[][] points = PointLoader.loadPoints(filepath);
-            System.out.println(Arrays.deepToString(points));
-        } catch (Exception e) {
+            System.out.println(PointComparer.findClosestPoint(points));
+        } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
         }
+        
     }
 }
 
