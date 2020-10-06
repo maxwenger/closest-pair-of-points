@@ -137,7 +137,7 @@ float closest(Point P[], int n)
 }  
   
 // Driver code  
-int main()  
+int main(int argc, char* argv[])  
 {  
     Point P[] = {{0, 0}, {0, 1}, {10, 5}, {4, 3}, {3, 10}};  
     int n = sizeof(P) / sizeof(P[0]);  

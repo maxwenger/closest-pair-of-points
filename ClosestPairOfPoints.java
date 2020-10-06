@@ -4,7 +4,7 @@ import java.util.*;
 class ClosestPairOfPoints {
 
     public static void main(String[] args) {
-        String filepath = "data.txt";
+        String filepath = args[0];
 
         try {
             int[][] points = PointLoader.loadPoints(filepath);
